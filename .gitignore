@@ -1,0 +1,12 @@
+# Fichiers de travail : ils restent sur le disque I, jamais sur GitHub
+_sources/
+build.py
+email.txt
+CAHIER_DES_CHARGES.md
+*.bat
+__pycache__/
+
+# Images qui ne sont plus utilisées sur le site
+assets/img/photo-concert*
+assets/img/photo-couple*
+assets/img/tournage-*
