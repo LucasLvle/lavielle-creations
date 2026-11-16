@@ -100,6 +100,8 @@ h2{font-size:clamp(1.8rem,3.6vw,2.9rem);line-height:1.12;letter-spacing:-.03em;f
 .car.end::after{opacity:0}
 .car-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 0 8px;border-radius:var(--radius)}
 .car-track::-webkit-scrollbar{display:none}
+/* espace en fin de piste : la dernière carte peut elle aussi venir se caler à gauche */
+.car-track::after{content:"";flex:none;width:calc(100% - min(560px,82vw) - 20px)}
 .card{flex:none;width:min(560px,82vw);scroll-snap-align:start;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;text-align:left;display:flex;flex-direction:column;transition:border-color .25s,transform .25s}
 .card:hover{border-color:var(--accent-line);transform:translateY(-3px)}
 .card-media{position:relative;aspect-ratio:16/9;overflow:hidden;background:#000}

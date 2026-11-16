@@ -38,7 +38,7 @@
   let wanted = null; /* onglet cliqué : reste actif même si le carrousel bute en fin de course */
   const sync = () => {
     const end = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
-    const i = end && track.scrollLeft > 4 && wanted === null ? cards.length - 1 : Math.min(cards.length - 1, Math.round(track.scrollLeft / step()));
+    const i = Math.min(cards.length - 1, Math.round(track.scrollLeft / step()));
     const cur = wanted !== null ? wanted : i;
     tabs.forEach((t, k) => t.classList.toggle('on', k === cur));
     const on = tabs[cur];
