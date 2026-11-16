@@ -42,7 +42,9 @@
     const cur = wanted !== null ? wanted : i;
     tabs.forEach((t, k) => t.classList.toggle('on', k === cur));
     const on = tabs[cur];
-    if (on && on.parentElement.scrollWidth > on.parentElement.clientWidth) on.parentElement.scrollTo({ left: on.offsetLeft - 20, behavior: 'smooth' });
+    const bar = on && on.parentElement;
+    if (bar && bar.scrollWidth > bar.clientWidth + 2) bar.scrollTo({ left: on.offsetLeft - 20, behavior: 'smooth' });
+    track.parentElement.classList.toggle('end', end);
     prev.disabled = track.scrollLeft < 4;
     next.disabled = end;
   };
