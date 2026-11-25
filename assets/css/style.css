@@ -8,7 +8,7 @@
   --accent-soft:rgba(95,214,147,.12); --accent-line:rgba(95,214,147,.35);
   --radius:18px; --radius-s:12px; --wrap:1240px; --nav-h:68px;
   --sans:'Sora',system-ui,-apple-system,'Segoe UI',sans-serif;
-  --serif:'Instrument Serif','Times New Roman',serif;
+  --serif:'Newsreader','Times New Roman',serif;
 }
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 12px);-webkit-text-size-adjust:100%}
@@ -21,7 +21,7 @@ ul,ol{padding:0;list-style:none}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
 .wrap{width:min(var(--wrap),100% - 40px);margin-inline:auto}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-em.a{font-family:var(--serif);font-style:italic;font-weight:400;color:var(--accent);letter-spacing:0;font-size:1.12em;line-height:1}
+em.a{font-family:var(--serif);font-style:italic;font-weight:500;color:var(--accent);letter-spacing:-.01em;font-size:1.06em;line-height:1}
 
 /* Boutons */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;height:46px;padding:0 22px;border-radius:999px;font-weight:600;font-size:14.5px;white-space:nowrap;transition:transform .2s,background .2s,border-color .2s,box-shadow .2s}
@@ -167,7 +167,7 @@ h2{font-size:clamp(1.8rem,3.6vw,2.9rem);line-height:1.12;letter-spacing:-.03em;f
 /* Méthode et tarif */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .step{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
-.step i{font-style:normal;font-family:var(--serif);font-size:44px;color:var(--accent);line-height:1}
+.step i{font-style:italic;font-weight:500;font-family:var(--serif);font-size:44px;color:var(--accent);line-height:1}
 .step h3{font-size:1.15rem;font-weight:600;margin:10px 0 8px;letter-spacing:-.01em}
 .step p{color:var(--muted);font-size:14.5px}
 .price{margin-top:20px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;border:1px solid var(--accent-line);background:linear-gradient(120deg,var(--accent-soft),transparent 60%),var(--surface);border-radius:var(--radius);padding:28px 32px}
